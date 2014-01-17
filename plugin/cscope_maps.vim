@@ -138,7 +138,7 @@ if has("cscope")
     " Hit 'CTRL-\', followed by one of the cscope search types above (S,G,C,T,E,F,I,D) 
     " in capital form, you will be asked to input search term. The result of your cscope
     " search will be displayed in the current window. 
-    function Csfind(type, new_window, pattern)
+    function! Csfind(type, new_window, pattern)
         if a:pattern == ""
             echo ""
             return
