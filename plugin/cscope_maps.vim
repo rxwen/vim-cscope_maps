@@ -23,6 +23,11 @@
 " Jason Duell       jduell@alumni.princeton.edu     2002/3/7
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+if g:Gtags_prefer_gtags_to_cscope == 1
+    " if user prefer GNU global (gtags) to cscope
+    " don't load current script
+    finish
+endif
 
 " This tests to see if vim was configured with the '--enable-cscope' option
 " when it was compiled.  If it wasn't, time to recompile vim... 
