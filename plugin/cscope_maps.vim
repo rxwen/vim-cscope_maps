@@ -100,12 +100,6 @@ if has("cscope")
         " go back to where you were before the search.  
         "
 
-        if g:Gtags_prefer_gtags_to_cscope == 1
-            " if user prefer GNU global (gtags) to cscope
-            " don't create key maps for cscope
-            return
-        endif
-
         nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>	
         nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>	
         nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>	
